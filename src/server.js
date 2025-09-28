@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/',(req,res)=>{
-    res.send("Welcome to the docker image app");
+    res.send("Welcome to docker image app");
 });
 
 app.listen(3000,function(){
