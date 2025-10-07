@@ -1,1 +1,20 @@
 
+name: testing context variables
+
+on:
+  workflow_dispatch
+
+env: 
+  cloud: google-cloud
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Say Hello from KWin Tech"
+        run: |
+          echo "Repository Name ${{github.repository}}"
+          echo "Workflow Name ${{github.workflow}}"
+          echo "Triggered by ${{github.triggering_actor}}"
+        
+        
