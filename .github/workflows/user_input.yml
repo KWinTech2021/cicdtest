@@ -5,10 +5,12 @@ on:
     inputs:
       number1:
         description: "First Number"
+        type: number
         default: '0'
         required: true
       number2: 
         description: "Second Number"
+        type: number
         default: '0'
         required: true
         
