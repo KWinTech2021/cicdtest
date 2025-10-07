@@ -12,8 +12,8 @@ jobs:
     env: 
       Greeting: Hello
     steps:
-      name: "Say Hello from KWin Tech"
-      run: echo "$Greeting $First_Name is using $cloud"
-      env: 
-        First_Name: Win
+      - name: "Say Hello from KWin Tech"
+        run: echo "$Greeting $First_Name is using $cloud"
+        env: 
+          First_Name: Win
       
