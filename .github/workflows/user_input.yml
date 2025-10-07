@@ -13,6 +13,16 @@ on:
         type: number
         default: '0'
         required: true
+      operator:
+        description: "Arithmetic Operator"
+        type: choice
+        default: 'sum'
+        required: true
+        options: 
+          - sum
+          - substract
+          - multiply
+          - divide
         
 jobs:
   add_numbers:
